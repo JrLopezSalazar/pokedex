@@ -22,7 +22,7 @@ const paginateData = (items, currentPage) => {
     const minPAge = (maxPage- PAGES_PER_BLOCK) + 1
 
     for (let i = minPAge; i <= maxPage; i++) {
-        if(i <= LastPage){
+        if(i <= lastPage){
 
             pagesInCurrentBlock.push(i)    
         }

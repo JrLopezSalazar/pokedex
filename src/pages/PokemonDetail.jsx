@@ -1,12 +1,13 @@
 import { useParams } from "react-router-dom"
 import { getPokemonById } from "../services/pokemons"
 import { useEffect, useState } from "react"
+import StatBarList from "../components/pokemonDetail/StatBarList"
 
 const PokemonDetail = () => {
 
   const [pokemonData, setPokemonData] = useState(null)
 
-  const {pokemonId} = useParams()
+  const {pokemonId} = useParams() 
   
   useEffect(() => {
     getPokemonById(pokemonId)
@@ -18,8 +19,8 @@ const PokemonDetail = () => {
   
 
   return (
-    <main>
-        <article>
+    <main className="flex justify-center items-center ">
+        <article className="w-[min(100%,_400px)]" >
           <header>
             <div>
               <img src={pokemonData?.image} alt="" />
@@ -27,6 +28,7 @@ const PokemonDetail = () => {
           </header>
           <section>
             <span> #{pokemonData?.id}</span>
+            <StatBarList stats={pokemonData?.stats} />
           </section>
         </article>
     </main>

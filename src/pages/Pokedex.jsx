@@ -1,3 +1,4 @@
+import { useState } from "react";
 import Pagination from "../components/pokedex/Pagination";
 import PokemonList from "../components/pokedex/PokemonList";
 import usePokedex from "../hooks/usePokedex";
@@ -60,6 +61,7 @@ const Pokedex = () => {
         lastPage={lastPage}
         pagesInCurrentBlock={pagesInCurrentBlock}
         currentPage={currentPage}
+        setCurrentPage={setCurrentPage}
       />
 
       <PokemonList pokemons={itemsCurrentPage} />

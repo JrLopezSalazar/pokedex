@@ -20,6 +20,6 @@ const trainerSlice = createSlice({
   },
 });
 
-export const { loginTrainer } = trainerSlice.actions;
+export const { loginTrainer, logout } = trainerSlice.actions;
 
 export default trainerSlice.reducer;

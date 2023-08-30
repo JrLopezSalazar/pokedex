@@ -6,12 +6,14 @@ const PrivateRoutes = () => {
   const { name } = useSelector((store) => store.trainer);
 
   if (name)
-   return
+    return(
   
    <HeaderPokeball>f
     <Outlet />;
     
   </HeaderPokeball> 
+      )
+  
 
   return <Navigate to="/" />;
 };
