@@ -24,29 +24,29 @@ const Pokedex = () => {
   );
 
   return (
-    <main>
-      <section>
-        <p>
-          <span>Welcome {name}</span>
+    <main className=" ">
+      <section className="justify-between px-6 gap-6  text-3xl">
+        <p className="my-7">
+          <span className="text-red-500 capitalize">Welcome {name}, </span> <span>here you can find your favorite pokemon</span>
         </p>
-        <form>
-          <div>
+        <form className="md:flex md:justify-between md:items-center">
+          <div className="mb-5 border-4">
             <input
               value={pokemonName}
               onChange={handleChange(setPokemonName)}
               placeholder="Search pokemon..."
               type="text"
             />
-            <button>Search</button>
+            {/* <button>Search</button> */}
           </div>
 
-          <select
+          <select className="flex border-4 ml-12"
             value={pokemonType}
             onChange={handleChange(setPokemonType)}
             name=""
             id=""
           >
-            <option value="">All pokemons</option>
+            <option className="flex " value="">All pokemons</option>
 
             {types.map((type) => (
               <option key={type.name} value={type.name} className="capitaliza">

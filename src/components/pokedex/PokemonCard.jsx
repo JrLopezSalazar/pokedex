@@ -7,7 +7,6 @@ import { Link } from "react-router-dom"
 const PokemonCards = ({ pokemonUrl }) => {
   const [pokemonInfo, setPokemonInfo] = useState(null);
 
-  
 
   useEffect(() => {
     getPokemonByUrl(pokemonUrl)
@@ -15,6 +14,7 @@ const PokemonCards = ({ pokemonUrl }) => {
       .catch((err) => console.log(err));
       console.log(pokemonUrl) 
   }, []);
+  console.log(pokemonInfo)
 
   return (
     <Link
