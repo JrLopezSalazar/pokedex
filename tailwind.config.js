@@ -8,7 +8,7 @@ export default {
     extend: {
       animation: {
         cursor: 'cursor .8s linear infinite alternate',
-        type: 'type 2.9s ease-out .8s 1 normal both',
+        type: 'type 2.9s ease-out .8s infinite alternate both',
         'type-reverse': 'type 1.8s ease-out 0s infinite alternate-reverse both',
       },
       keyframes: {

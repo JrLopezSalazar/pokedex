@@ -2,7 +2,7 @@
 
 const FooterPokeball = () => {
   return (
-    <section className=' border-4 border-violet-600'>
+    <section className=' '>
         <div className=' h-16 bg-red-600'></div>
         <div className='h-12 bg-black relative'>
             <div className="grid h-16 aspect-square bg-white rounded-full

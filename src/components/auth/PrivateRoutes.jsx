@@ -8,7 +8,7 @@ const PrivateRoutes = () => {
   if (name)
     return(
   
-   <HeaderPokeball>f
+   <HeaderPokeball>
     <Outlet />;
     
   </HeaderPokeball> 
